@@ -1,0 +1,37 @@
+<p>prenda-creaedita works!</p>
+<div class="container">
+
+  <h1>Prenda</h1>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="Id" [(ngModel)]="prenda.id">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Nombre</mat-label>
+    <input matInput required placeholder="letraTalla" [(ngModel)]="prenda.nombrePrenda">
+
+  </mat-form-field>
+
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Color</mat-label>
+    <input matInput required placeholder="letraTalla" [(ngModel)]="prenda.colorPrenda">
+
+  </mat-form-field>
+
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Diseno</mat-label>
+    <input matInput required placeholder="letraTalla" [(ngModel)]="prenda.disenoPrenda">
+  </mat-form-field>
+
+  <br>
+  <button mat-raised-button color="primary" (click)="aceptar()">Aceptar</button>
+  <button mat-raised-button color="warn" routerLink="/prendas">Cancelar</button>
+  <p>{{mensaje}}</p>
+
+</div>
