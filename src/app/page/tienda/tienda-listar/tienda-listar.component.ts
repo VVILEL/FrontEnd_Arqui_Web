@@ -39,5 +39,4 @@ export class TiendaListarComponent implements OnInit {
       });
     });
   }
-
 }
