@@ -3,9 +3,8 @@ import { HttpClient } from '@angular/common/http'
 import { Prenda } from '../model/prenda';
 import { EMPTY, Subject } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
+
 export class PrendaService {
   url: string = "http://localhost:5000/prendas";
   private listacambio = new Subject<Prenda[]>()
