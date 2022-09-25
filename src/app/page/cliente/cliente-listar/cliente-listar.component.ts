@@ -39,5 +39,5 @@ export class ClienteListarComponent implements OnInit {
         this.cService.setLista(data);
       });
     });
-  }
+   }
 }
