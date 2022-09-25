@@ -43,7 +43,7 @@ export class ClienteService {
     if(texto.length!=0){
       return this.http.post<Cliente[]>(`${this.url}/buscar`, texto.toLowerCase(), {
       });
-    }
+     }
     return EMPTY;
   }
 }  
