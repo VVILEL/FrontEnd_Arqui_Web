@@ -23,7 +23,7 @@ module.exports = function() {
             {
                 id:4,
                 nombrePrenda: "Medias",
-                colorPrenda: "Gris",
+                colorPrenda: "Blancas",
                 disenoPrenda: "Animado"
             }
         ],
