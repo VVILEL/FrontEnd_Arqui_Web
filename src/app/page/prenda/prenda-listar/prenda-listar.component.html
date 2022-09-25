@@ -5,24 +5,20 @@
   <app-prenda-buscar></app-prenda-buscar>
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> id </th>
       <td mat-cell *matCellDef="let element"> {{element.id}} </td>
     </ng-container>
-
 
     <ng-container matColumnDef="prenda">
       <th mat-header-cell *matHeaderCellDef> Tipo prenda </th>
       <td mat-cell *matCellDef="let element"> {{element.nombrePrenda}} </td>
     </ng-container>
 
-
     <ng-container matColumnDef="color">
       <th mat-header-cell *matHeaderCellDef> Color prenda </th>
       <td mat-cell *matCellDef="let element"> {{element.colorPrenda}} </td>
     </ng-container>
-
 
     <ng-container matColumnDef="diseno">
       <th mat-header-cell *matHeaderCellDef> Diseño prenda </th>
