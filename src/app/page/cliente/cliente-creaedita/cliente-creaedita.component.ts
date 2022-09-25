@@ -51,7 +51,7 @@ export class ClienteCreaeditaComponent implements OnInit {
         this.clienteService.listarId(this.id).subscribe(data=>{
           this.cliente=data;
         })
-      }
+       }
     }
   }
   
