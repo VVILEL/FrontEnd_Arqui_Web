@@ -30,7 +30,7 @@ export class ClienteCreaeditaComponent implements OnInit {
       if(this.edicion){
       this.clienteService.insertar(this.cliente).subscribe(data=>{
         this.clienteService.listar().subscribe(data=>{
-          this.clienteService.setLista(data);
+          this.clienteService.setLista(data) ;
         })
       })
     }
