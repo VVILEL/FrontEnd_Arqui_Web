@@ -41,5 +41,5 @@ export class MarcaListarComponent implements OnInit {
       });
     });
   }
-
 }
+ 
