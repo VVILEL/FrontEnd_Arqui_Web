@@ -21,7 +21,7 @@ export class ClienteBuscarComponent implements OnInit {
           array.push(data[index]);
         }
          });
-      this.clienteService.setLista(array);
+      this.clienteService.setLista(array) ;
        })
      }
 
