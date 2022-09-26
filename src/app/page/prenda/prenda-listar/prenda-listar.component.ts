@@ -5,7 +5,6 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { PrendaDialogoComponent } from './prenda-dialogo/prenda-dialogo.component';
 
-
 @Component({
   selector: 'app-prenda-listar',
   templateUrl: './prenda-listar.component.html',
@@ -33,7 +32,6 @@ export class PrendaListarComponent implements OnInit {
     this.idMayor = id;
     this.dialog.open(PrendaDialogoComponent);
   }
-
   eliminar(id: number) {
     this.pService.eliminar(id).subscribe(() => {
       this.pService.listar().subscribe(data => {
