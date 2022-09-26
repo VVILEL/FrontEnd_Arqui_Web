@@ -24,7 +24,8 @@ export class TiendaListarComponent implements OnInit {
   this.tService.getLista().subscribe(data=>{
     this.dataSource=new MatTableDataSource(data);
   });
-  this.tService.getConfirmaEliminacion().subscribe(data=>{
+  
+    this.tService.getConfirmaEliminacion().subscribe(data=>{
     data==true? this.eliminar(this.idMayor):false;
   });
   }
@@ -32,6 +33,7 @@ export class TiendaListarComponent implements OnInit {
     this.idMayor=id;
     this.dialog.open(TiendaDialogoComponent);
   }
+  
   eliminar(id:number){
     this.tService.eliminar(id).subscribe(()=>{
       this.tService.listar().subscribe(data=>{
