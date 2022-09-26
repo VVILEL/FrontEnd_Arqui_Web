@@ -33,8 +33,7 @@ export class TiendaCreaeditaComponent implements OnInit {
         })
       })
     }
-      
-    else{
+     else{
       this.tiendaService.insertar(this.tienda).subscribe(data => {
         this.tiendaService.listar().subscribe(data => {
           this.tiendaService.setLista(data);
