@@ -16,6 +16,6 @@ export class ClienteDialogoComponent implements OnInit {
   }
   confirmar(estado:boolean){
     this.clienteService.setConfirmaEliminacion(estado);
-    this.dialogRef.close();
+    this.dialogRef.close() ;
   }
 }
