@@ -13,7 +13,6 @@ export class PrendaBuscarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
     buscar(e:any){
     let array: Prenda[]=[];  
     this.prendaService.listar().subscribe(data=>{
