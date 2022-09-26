@@ -33,6 +33,7 @@ export class TiendaCreaeditaComponent implements OnInit {
         })
       })
     }
+      
     else{
       this.tiendaService.insertar(this.tienda).subscribe(data => {
         this.tiendaService.listar().subscribe(data => {
@@ -45,6 +46,7 @@ export class TiendaCreaeditaComponent implements OnInit {
       this.mensaje = "Complete los valores requeridos";
     }
   }
+  
   init(){
     if(this.edicion){
       this.tiendaService.listarId(this.id).subscribe(data=>{
